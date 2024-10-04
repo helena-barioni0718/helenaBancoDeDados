@@ -7,6 +7,9 @@ select distinct sigla_depto,nome_depto from departamento;
 -- Exercicio3
 select  distinct nome_funcionario from funcionario;
 
+-- Exercicio4
+select distinct nome_funcionario from funcionário;
+
 -- Exercicio5
 select distinct nome_projeto from projeto;
 
