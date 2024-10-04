@@ -1,0 +1,65 @@
+-- Exercicio1
+select nome_depto, sigla_depto from departamento
+
+-- Exercicio2 
+select distinct sigla_depto,nome_depto from departamento;
+
+-- Exercicio3
+select  distinct nome_funcionario from funcionario;
+
+-- Exercicio5
+select distinct nome_projeto from projeto;
+
+-- Exercicio6
+select  nome_depto from departamento 
+where qtdfuncionariosdepto <11;
+
+-- Exercicio7
+select nome_depto from departamento
+where qtdfuncionariosdepto >= 15;
+
+-- Exercicio8
+select nome_funcionario from funcionario
+where sigla_depto = 'IT';
+select*from funcionario;
+
+-- Exercicio9
+select nome_funcionario,cargo from funcionario
+ order by cargo desc;
+ 
+ -- Exercicio10
+ select nome_depto, sigla_depto from departamento
+ order by sigla_depto asc;
+ 
+ -- Exercicio11
+ select nome_projeto, sigla_projeto from projeto
+ order by nome_projeto desc;
+ 
+ -- Exercico12
+ alter table funcionario
+ add column data_admissao date,
+ add column salario decimal(12,2);
+ 
+ -- Exercicio13
+ alter table projeto
+ add column duracao numeric;
+ 
+ -- Exercicio14 A
+select *from projeto;
+update funcionario set
+data_admissao = '2022-02-15',
+salario= 5478.15
+where codfuncionario = 8;
+
+-- Exercicio14 B 
+select*from funcionario;
+alter table funcionario
+modify column data_admissao datetime not null;
+
+
+alter table funcinario
+modify column salario float not null;
+delete from funcionario
+where codfuncionario = 8
+
+
